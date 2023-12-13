@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4F2C9;
+}
+.body-content{
+    display: flex;
+    font-family:'Lucida Sans';
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 12px;
+    color: #265999;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #265999;
+    font-family:'Lucida Sans';
+    
+}
+
+.header{
+    color: #CA9703;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 22px;
+    padding-left: 550px;
+
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items a{
+    color: #CA9703;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.nav-items a:hover{
+    background-color: #4488BF ;
+    
+}
+
+.logo{
+    display: flex;
+    padding-left: 20px;
+}
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.input-search{
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    padding: 2px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 20%;
+    transition: all 500ms ease-in-out;
+    background-color: #CA9703;
+    padding-right: 40px;
+    color: #CA9703;
+    font-family:'Lucida Sans';
+}
+
+.input-search::placeholder{
+    color: #CA9703;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family:'Lucida Sans';
+}
+
+.btn-search{
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    font-size: 22px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color: #265999;
+    background: transparent;
+}
+
+.btn-search:focus ~ .input-search{
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #CA9703;
+    transition: all 500ms cubic-bezier(0,0.110,0.35,2);
+    color: #CA9703;
+}
+
+.input-search:focus{
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #CA9703;
+    transition: all 500ms cubic-bezier(0,0.110,0.35,2);
+}
+.charbar {
+    background-color: #265999;
+    margin-top: 25px;
+    width: 200px;
+}
+.charbar li {
+    display: inline-block;
+}
+
+.charbar li a {
+    color: #CA9703;
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.charbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.charbar ul ul li {
+    display: block;
+}
+
+.charbar li:hover ul {
+    display: block;
+    position: relative;
+    width: 100px;
+}
+
+.charbar ul ul li a:hover {
+    background-color: #4488BF;
+    width: 150px;
+}
+
+.char-container{
+    padding-top: 20px;
+    display:grid;
+    justify-content:center;
+}
+.charbars{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #4488BF;
+    text-decoration: underline;
+}
+label {
+    display: block;
+    padding-left: 50px;
+    color: #265999;
+}
+
+.checkboxes {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    margin-left: 5px;
+    color: #CA9703;
+}
+
+input[type="checkbox"]+label {
+    margin-left: 2px;
+}
+.button1 {
+    background: #4488BF;
+    border: 0;
+    border-radius: 15px;
+    color: #CA9703;
+    cursor: pointer;
+    font-family: 'Lucida Sans';
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .1s ease-in-out;
+  }
+  
+  .button1:not([disabled]):focus {
+    box-shadow: 0 0 .75rem #CA9703;
+  }
+  .button1:not([disabled]):hover {
+    box-shadow: 0 0 .75rem #CA9703;
+  }
+  .btn1{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
